@@ -18,8 +18,10 @@ app.use(cookieParser());
 
 // Import routes
 import authRoutes from './routes/auth.routes.js';
+import farmerRoutes from './routes/farmer.routes.js';
 
 app.use('/auth', authRoutes);
+app.use('/farmer', farmerRoutes);
 
 
 
