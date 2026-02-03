@@ -46,8 +46,9 @@ userSchema.methods.comparePassword = async function(candidatePassword) {
 
 userSchema.statics.hashPassword = async function(password) {
   const salt = await bcrypt.genSalt(10);
-  return await bcrypt.hash(password, salt);
+  return await bcrypt.hash(password, salt); 
 }
 
-export default User = mongoose.model('User', userSchema);
+const User = mongoose.model('User', userSchema);
 
+export default User;

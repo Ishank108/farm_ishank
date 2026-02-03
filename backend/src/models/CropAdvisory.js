@@ -46,4 +46,5 @@ const cropAdvisorySchema = new mongoose.Schema({
   timestamps: true
 })
 
-export default CropAdvisory = mongoose.model('CropAdvisory', cropAdvisorySchema);
+const CropAdvisory = mongoose.model('CropAdvisory', cropAdvisorySchema);
+export default CropAdvisory 

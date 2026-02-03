@@ -49,4 +49,5 @@ const soilDataSchema = new mongoose.Schema({
   timestamps: true
 });
 
-export default SoilData = mongoose.model('SoilData', soilDataSchema);
+const SoilData = mongoose.model('SoilData', soilDataSchema);
+export default SoilData 
